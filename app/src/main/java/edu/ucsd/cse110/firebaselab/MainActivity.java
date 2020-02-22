@@ -16,13 +16,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 import edu.ucsd.cse110.firebaselab.chat.ChatService;
-import edu.ucsd.cse110.firebaselab.chat.FirebaseFirestoreAdapter;
 
 public class MainActivity extends AppCompatActivity {
-    public static final String CHAT_MESSAGE_SERVICE_EXTRA = "CHAT_MESSAGE_SERVICE";
-
-    private static final String FIRESTORE_CHAT_SERVICE = "FIRESTORE_CHAT_SERVICE";
-
     String TAG = MainActivity.class.getSimpleName();
 
     String COLLECTION_KEY = "chats";
@@ -43,14 +38,9 @@ public class MainActivity extends AppCompatActivity {
 
         from = sharedpreferences.getString(FROM_KEY, null);
 
-        MyApplication.getChatServiceFactory().put(FIRESTORE_CHAT_SERVICE, (chatId ->
-                new FirebaseFirestoreAdapter(COLLECTION_KEY, CHAT_ID, MESSAGES_KEY, FROM_KEY, TEXT_KEY, TIMESTAMP_KEY)));
-
-        String chatServiceKey = getIntent().getStringExtra(CHAT_MESSAGE_SERVICE_EXTRA);
-        if (chatServiceKey == null) {
-            chatServiceKey = FIRESTORE_CHAT_SERVICE;
-        }
-        chat = MyApplication.getChatServiceFactory().create(chatServiceKey, CHAT_ID);
+        chat = MyApplication
+                .getChatServiceFactory()
+                .createFirebaseFirestoreChatService(COLLECTION_KEY, CHAT_ID, MESSAGES_KEY, FROM_KEY, TEXT_KEY, TIMESTAMP_KEY);
 
         initMessageUpdateListener();
 

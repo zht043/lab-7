@@ -17,4 +17,7 @@ public class MyApplication extends Application {
         return chatServiceFactory;
     }
 
+    public static ChatServiceFactory setChatServiceFactory(ChatServiceFactory csf) {
+        return chatServiceFactory = csf;
+    }
 }
