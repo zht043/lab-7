@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "687114368439",
+    "firebase_url": "https://cse110-lab7-e69bd.firebaseio.com",
+    "project_id": "cse110-lab7-e69bd",
+    "storage_bucket": "cse110-lab7-e69bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:687114368439:android:40e6c3922378800a0e6432",
+        "android_client_info": {
+          "package_name": "edu.ucsd.cse110.firebaselab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "687114368439-sl39lviglr6f33njksr84k8vhbqh1mkv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.ucsd.cse110.firebaselab",
+            "certificate_hash": "436cc1d5741488430db05f1400abb794283c21e5"
+          }
+        },
+        {
+          "client_id": "687114368439-9gjtageqr72uhsob4nf6pj4f46q1kte5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAmpaEG0UZS67aiV6Nn8K0uen8oGnzR-I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "687114368439-9gjtageqr72uhsob4nf6pj4f46q1kte5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
