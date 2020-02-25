@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "687114368439-csv5718obuj4a7ip36dp8b2jurdm7m50.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.ucsd.cse110.firebaselab",
+            "certificate_hash": "9e29c1a719f1a5b0036941ea737813e7208ef108"
+          }
+        },
+        {
           "client_id": "687114368439-sl39lviglr6f33njksr84k8vhbqh1mkv.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
